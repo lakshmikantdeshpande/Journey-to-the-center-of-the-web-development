@@ -1,0 +1,20 @@
+**Selectors using attributes
+
+[type='radio'] {
+margin: 20px 0px 20px 0px;
+}
+
+
+** padding for internal spacing
+
+
+** margin for external spacing
+
+
+**CSS Priorities
+1. inline style
+2. id style
+2. own class (If there are multiple classes, it chooses the class which appears first in style tag)
+3. body / parent class
+
+
