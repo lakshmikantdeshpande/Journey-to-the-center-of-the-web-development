@@ -12,9 +12,23 @@ margin: 20px 0px 20px 0px;
 
 
 **CSS Priorities
+0. !important attribute (Although it doesn't work with body tag)
 1. inline style
 2. id style
 2. own class (If there are multiple classes, it chooses the class which appears first in style tag)
 3. body / parent class
 
 
+**var() in css
+variables must be defined starting with -- and they are case sensitive
+Syntax:
+	Declaration:
+		--main-background-color: coral
+	Usage:
+		div {
+			background-color: var(--main-background-color, gray)  // gray is a fallback value (it's optional)
+			// background-color: var(--main-background-color) 
+		}
+
+** :root 
+root selector is applied everywhere
