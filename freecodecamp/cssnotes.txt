@@ -42,3 +42,9 @@ root selector is applied everywhere
     }
 }
 This query will change css when screen width <= 350 px;
+
+** <strong> is converted to font-weight: bold by browsers
+** <em> is converted to font-style: italic by browsers
+** <del> is converted to text-decoration: strikethrough by browsers
+
+** <hr> for a horizontal line
