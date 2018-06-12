@@ -32,3 +32,13 @@ Syntax:
 
 ** :root 
 root selector is applied everywhere
+
+
+** Media queries
+@media(max-width: 350px) {
+	:root {
+      --penguin-size: 200px;
+      --penguin-skin: black;  
+    }
+}
+This query will change css when screen width <= 350 px;
