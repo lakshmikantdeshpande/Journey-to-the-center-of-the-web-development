@@ -48,3 +48,11 @@ This query will change css when screen width <= 350 px;
 ** <del> is converted to text-decoration: strikethrough by browsers
 
 ** <hr> for a horizontal line
+
+** text-transform property is used to convert the text to different cases:
+	lowercase uppercase initial capitalize inherit none
+
+** line-height: to set height of a line in text
+
+** Pseudo classes: the classes which get applied on change of a state in the element
+eg. hover, 
