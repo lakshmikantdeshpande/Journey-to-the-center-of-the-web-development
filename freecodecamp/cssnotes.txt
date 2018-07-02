@@ -82,6 +82,50 @@ Fixed position is similar to absolute. The only difference is that the element w
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Complementary colors:
+* Complementary colors:
 	the colors which are present opposite to each other in color wheel are complementry colors.
 	It's good to use complementary colors to have contrast in the application.
+
+
+* hsl()   Hue, Saturation, and Lightness
+eg. red	hsl(0, 100%, 50%)
+
+
+* Linear gradient: Use it for color gradient.
+eg. background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+
+* Repeated linear gradient: for creating stripes..
+eg. background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      yellow 40px,
+      black 40px,
+      black 80px
+    );
+
+* background image 
+eg. background: url("http:ASDFasdfasdf.acsomasdc");
+
+****************************************************************************************
+
+* CSS Transform
+The following css snippet will scale the div up by 10% when one hovers over it.
+	div:hover {
+	    transform: scale(1.1);
+	  }
+ Other functions are skewX, skewY, scale, rotate etc.
+
+ * Animations
+
+#anim {
+  animation-name: rainbow; 
+  animation-duration: 3s;
+}
+@keyframes rainbow {
+  0% {                          // which property needs to be applied at 0% of animation duration
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
