@@ -115,7 +115,9 @@ The following css snippet will scale the div up by 10% when one hovers over it.
 	  }
  Other functions are skewX, skewY, scale, rotate etc.
 
- * Animations
+
+
+* Animations
 
 #anim {
   animation-name: rainbow; 
@@ -129,3 +131,6 @@ The following css snippet will scale the div up by 10% when one hovers over it.
     background-color: yellow;
   }
 }
+
+animation-iteration-count: infinite;  // makes the animation play infinitely.
+animation-timing-function: ease-out;  // defines timing function of an animation (eg. linear, cubic-bezier)
