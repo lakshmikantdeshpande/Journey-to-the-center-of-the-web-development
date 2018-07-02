@@ -36,7 +36,7 @@ root selector is applied everywhere
 
 ** Media queries
 @media(max-width: 350px) {
-	:root {
+    :root {
       --penguin-size: 200px;
       --penguin-skin: black;  
     }
@@ -68,3 +68,20 @@ eg. hover
 * top bottom left right: These attributes push an element away from given edge
 
 * Absolute position: If we are using absolute position, we should add relative position to the parent tag. If not added, it'll keep going up the hierarchy until body tag is found.
+
+* fixed | relative | absolute
+Fixed position is similar to absolute. The only difference is that the element will stay even after scrolling.
+
+* float: Elements are removed from the normal flow of the webpage, and moved around according to the value.
+	eg. float: right;  will make an element move to the right, and it'll be removed from the normal flow in the process.
+
+* z-index: It allows us to put elements one onto another. For doing this, make the parent tag as relative, mark the elements with absolute positioning, and apply z-index property to overlay an element onto another.
+
+
+* margin: auto;  centers an element horizontally.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Complementary colors:
+	the colors which are present opposite to each other in color wheel are complementry colors.
+	It's good to use complementary colors to have contrast in the application.
