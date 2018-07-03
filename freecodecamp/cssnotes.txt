@@ -178,3 +178,10 @@ eg. <figure>
 * High contrast readability
 	WCAG recommends at least 4.5 : 1 ratio for luminance for readability
 
+* accesskey   (Shortcut key for buttons / links)
+	We can add accesskey to links / buttons
+
+* tabindex 
+	- if it is -1, it means it is focusable, but not reachable by keyboard
+	- it also enables :focus pseudo class for use
+
