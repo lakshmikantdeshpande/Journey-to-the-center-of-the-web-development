@@ -159,3 +159,22 @@ eg. <figure>
 
 * fieldset
 	<form> <fieldset> <!-- controls --> </fieldset> </form>
+
+* time 
+	Time tag is used to let the browser know that enclosed content is time.
+ eg. <time datetime="2018-07-18"> Today </time>
+
+* Accessibility
+	Hide elements for screen readers by using the following kind of a css:
+	.sr-only {
+	  position: absolute;
+	  left: -10000px;
+	  width: 1px;
+	  height: 1px;
+	  top: auto;
+	  overflow: hidden;
+	}
+
+* High contrast readability
+	WCAG recommends at least 4.5 : 1 ratio for luminance for readability
+
