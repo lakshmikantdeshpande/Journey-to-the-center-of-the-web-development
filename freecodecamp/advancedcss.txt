@@ -1,0 +1,42 @@
+*****CSS Responsiveness*****
+
+* Media queries
+	Media queries are applied when specified device properties match. 
+eg. The following snippet will be applied when device width <= 800px
+	@media (max-width: 800px) {
+		p {
+			font-size: 20px;
+		}
+	}
+
+
+* Image max width (responsive images)
+
+* display property
+	elements are inline by default. If we make something as display:block, it'll allocate a new line to that element.
+eg. 
+	img {
+	  max-width: 80%;  // Scales size
+	  display: block;  // makes sure that new line is allotted to images
+	  height: auto;    // scales according to the aspect ratio
+	}
+
+
+* Retina friendly images  (width / height should be 50% of original image)
+
+
+* Responsive typography
+	vmin, vmax, vh, vw  (v = viewport)
+
+**************************************************************************************************************
+
+******* CSS Flexbox *******
+
+*display: flex;    			// makes a div flexible (without need of bootstrap)
+
+flex-direction: row;  		// changes direction of element appearance. 
+								(row, row-reverse, column, column-reverse) 
+justify-content: center; 	// justifies the content horizontally
+								(center, flex-start, flex-end, space-between, space-around)
+align-items: center;		// justifies the content vertically
+								(center, flex-start, flex-end, stretch, baseline)
