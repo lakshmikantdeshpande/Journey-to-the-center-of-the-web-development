@@ -39,4 +39,17 @@ flex-direction: row;  		// changes direction of element appearance.
 justify-content: center; 	// justifies the content horizontally
 								(center, flex-start, flex-end, space-between, space-around)
 align-items: center;		// justifies the content vertically
-								(center, flex-start, flex-end, stretch, baseline)
+								(center, flex-start, flex-end, stretch, baseline)\
+align-self: center;
+
+flex-wrap: wrap;			// wraps the elements in the container
+								(wrap, nowrap, wrap-reverse)
+flex-shrink: 1;				// grow / shrink element with respect to other elements in the container
+flex-grow: 1;					(kinda like bootstrap col-sm-1)
+flex-basis: 10em;			// base size of element before grow/shrink
+
+*Shorthand notation for grow shrink basis
+flex: 2 2 150px;			// grow, shrink, and basis values specified
+
+order: 1;					// specifies order of appearance in container;
+
