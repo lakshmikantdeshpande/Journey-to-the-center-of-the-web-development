@@ -53,3 +53,31 @@ flex: 2 2 150px;			// grow, shrink, and basis values specified
 
 order: 1;					// specifies order of appearance in container;
 
+**************************************************************************************************************
+
+******* CSS Grid *******
+
+display: Grid							// Tells browser to use grid system
+
+grid-template-columns: 50px 50px 50px; 	// creates 3 column grid of 50px
+grid-template-rows: 50px 50px 50px;		// creates 3 row grid of 50px
+eg. grid-template-rows: 1fr 100px 2fr; 
+						// (possible values for grid template rows / columns: fr (fraction), auto, %, px, em)
+
+grid-column-gap: 20px;    					// gap between grid rows / columns
+grid-row-gap: 20px;
+
+grid-gap: 30px; OR grid-gap: 10px 20px;		// gap between rows AND columns
+
+grid-column: 1 / 3;		// start grid from column 1 to 3  (i.e. 2 grid columns would be taken in 3x3 grid)
+
+ 11---2---3---4
+  |	* | * |   |
+  2---:---:---:
+  |	  |	  |	  |
+  3---:---:---:
+  |	  |	  |	  |
+  4-----------+
+
+
+
