@@ -1,0 +1,186 @@
+**Selectors using attributes
+
+[type='radio'] {
+margin: 20px 0px 20px 0px;
+}
+
+
+** padding for internal spacing
+
+
+** margin for external spacing
+
+
+**CSS Priorities
+0. !important attribute (Although it doesn't work with body tag)
+1. inline style
+2. id style
+2. own class (If there are multiple classes, it chooses the class which appears first in style tag)
+3. body / parent class
+
+
+**var() in css
+variables must be defined starting with -- and they are case sensitive
+Syntax:
+	Declaration:
+		--main-background-color: coral
+	Usage:
+		div {
+			background-color: var(--main-background-color, gray)  // gray is a fallback value (it's optional)
+			// background-color: var(--main-background-color) 
+		}
+
+** :root 
+root selector is applied everywhere
+
+
+** Media queries
+@media(max-width: 350px) {
+    :root {
+      --penguin-size: 200px;
+      --penguin-skin: black;  
+    }
+}
+This query will change css when screen width <= 350 px;
+
+** <strong> is converted to font-weight: bold by browsers
+** <em> is converted to font-style: italic by browsers
+** <del> is converted to text-decoration: strikethrough by browsers
+
+** <hr> for a horizontal line
+
+** text-transform property is used to convert the text to different cases:
+	lowercase uppercase initial capitalize inherit none
+
+** line-height: to set height of a line in text
+
+** Pseudo classes: the classes which get applied on change of a state in the element
+eg. hover
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+* Normal flow: It's the normal flow (position) of elements which is present in the webpage.
+	position: relative   => will make the current element move around considering the position of the elements that are around it.
+	[ In short everything around the element will stay, and the element will move around. ]
+
+	Two relative elements will overlap according to the order of their presence in the code.
+
+* top bottom left right: These attributes push an element away from given edge
+
+* Absolute position: If we are using absolute position, we should add relative position to the parent tag. If not added, it'll keep going up the hierarchy until body tag is found.
+
+* fixed | relative | absolute
+Fixed position is similar to absolute. The only difference is that the element will stay even after scrolling.
+
+* float: Elements are removed from the normal flow of the webpage, and moved around according to the value.
+	eg. float: right;  will make an element move to the right, and it'll be removed from the normal flow in the process.
+
+* z-index: It allows us to put elements one onto another. For doing this, make the parent tag as relative, mark the elements with absolute positioning, and apply z-index property to overlay an element onto another.
+
+
+* margin: auto;  centers an element horizontally.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+* Complementary colors:
+	the colors which are present opposite to each other in color wheel are complementry colors.
+	It's good to use complementary colors to have contrast in the application.
+
+
+* hsl()   Hue, Saturation, and Lightness
+eg. red	hsl(0, 100%, 50%)
+
+
+* Linear gradient: Use it for color gradient.
+eg. background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+
+* Repeated linear gradient: for creating stripes..
+eg. background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      yellow 40px,
+      black 40px,
+      black 80px
+    );
+
+* background image 
+eg. background: url("http:ASDFasdfasdf.acsomasdc");
+
+****************************************************************************************
+
+* CSS Transform
+The following css snippet will scale the div up by 10% when one hovers over it.
+	div:hover {
+	    transform: scale(1.1);
+	  }
+ Other functions are skewX, skewY, scale, rotate etc.
+
+
+
+* Animations
+
+#anim {
+  animation-name: rainbow; 
+  animation-duration: 3s;
+}
+@keyframes rainbow {
+  0% {                          // which property needs to be applied at 0% of animation duration
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+animation-iteration-count: infinite;  // makes the animation play infinitely.
+animation-timing-function: ease-out;  // defines timing function of an animation (eg. linear, cubic-bezier)
+
+****************************************************************************************
+
+Accessibility tips
+
+* Always use 'alt' attribute (useful for screen readers). Keep it blank for decorative images.
+* Use markup tags to make the data meaningful. eg. <main> <header> <nav> <footer> <article> <section>
+
+* Audio   Embed audio player in the webpage
+eg.	
+	<audio id="meowClip" controls>
+	  <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg" />
+	</audio>
+
+
+* Figure
+We should use figure tag to include figures in the webpage.
+eg. <figure>
+		<img src="abc.jpg" alt="abc">
+		<br>
+		<figcaption>ABC</figcaption>
+	</figure>
+
+* fieldset
+	<form> <fieldset> <!-- controls --> </fieldset> </form>
+
+* time 
+	Time tag is used to let the browser know that enclosed content is time.
+ eg. <time datetime="2018-07-18"> Today </time>
+
+* Accessibility
+	Hide elements for screen readers by using the following kind of a css:
+	.sr-only {
+	  position: absolute;
+	  left: -10000px;
+	  width: 1px;
+	  height: 1px;
+	  top: auto;
+	  overflow: hidden;
+	}
+
+* High contrast readability
+	WCAG recommends at least 4.5 : 1 ratio for luminance for readability
+
+* accesskey   (Shortcut key for buttons / links)
+	We can add accesskey to links / buttons
+
+* tabindex 
+	- if it is -1, it means it is focusable, but not reachable by keyboard
+	- it also enables :focus pseudo class for use
