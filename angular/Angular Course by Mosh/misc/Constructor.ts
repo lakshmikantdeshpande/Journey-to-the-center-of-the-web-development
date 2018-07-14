@@ -8,7 +8,7 @@ class Point {
 	}
 
 	draw() {
-		console.log('x: ' + this.x + 'y: ' + this.y);
+		console.log('x: ' + this.x + ' y: ' + this.y);
 	}
 }
 

@@ -4,7 +4,7 @@ var Point = /** @class */ (function () {
         this.y = y;
     }
     Point.prototype.draw = function () {
-        console.log('x: ' + this.x + 'y: ' + this.y);
+        console.log('x: ' + this.x + ' y: ' + this.y);
     };
     return Point;
 }());
