@@ -1,0 +1,42 @@
+** Attribute binding
+<img [src]="imageURL"> OR  <img src="{{ imageURL }}">
+
+** Class binding
+<div [class.active]="isActive">  // will refer to isActive variable in typescript, and add/remove active class accordingly
+
+** Style binding
+<button [style.backgroundColor]="buttonColor"> // will refer to buttonColor variable in typescript
+
+** Event binding
+<button (click)="onSave($event)"> // calls onClick method in typescript
+onSave($event) {
+	$event.stopPropogation(); // avoids event bubbling
+	console.log("button was clicked");
+}
+
+** Event filtering
+<button (keyup)="onSave($event)">
+onSave($event) {
+	if ($event.keyCode === 13)
+		console.log("Enter was pressed");
+}
+
+OR 
+
+<button (keyup.enter)="onSave()">
+
+
+
+** Template variables
+<input #email (keyup.enter)="onSave(email.value)">  // #email references to this email input box
+
+
+** 2 way binding
+<input [(ngModel)]="email" (keyup.enter)="onSave()">  
+// We need to add FormsModule to imports section in app.module.ts
+
+
+** Missing properties for binding
+we'll have to use such kind of syntax: [attrs.colspan]
+
+
