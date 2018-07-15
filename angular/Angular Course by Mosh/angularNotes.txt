@@ -40,3 +40,40 @@ OR
 we'll have to use such kind of syntax: [attrs.colspan]
 
 
+** Input  (for attributes)
+Mark the attributes which needs to be injected from HTML to TS file with @Input
+eg. app.component.ts    has isFavorite boolean property
+    app.component.html  has <favorite [isFavorite]="isFavorite"> tag
+
+    then
+    
+    favorite.component.ts   should have isFavorite boolean property 
+    @Input() isFavorite: boolean
+
+
+** Output  (for events)
+To emit change events from one component to another
+eg. app.component.ts 
+	isFavorite: boolean = true;
+	markFavorite() {
+		console.log("Favorite is changed");
+	}
+
+    app.component.html
+	<app-favorite (change)="markFavorite()" [isFavorite]="isFavorite"></app-favorite>
+	// here change is event which gets emmitted from favorite component, and it's annotated with @Output()
+	// isFavorite is input property annotated with @Input()  or @Input("isFavorite")
+
+    favorite.component.ts
+	@Input() isFavorite: boolean;
+	@Output() change = new EventEmitter();
+
+	markFavorite() {
+		this.isFavorite = !this.isFavorite;
+	}
+
+    favorite.component.html
+	<span (click)="markFavorite()">
+		Favorite {{ isFavorite ? "works" : "doesn't work" }}
+	</span> 	
+
