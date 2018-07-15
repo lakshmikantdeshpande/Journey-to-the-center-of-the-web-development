@@ -13,7 +13,7 @@ export class AppComponent {
   }
 
   markFavorite(eventArguments: FavoriteChangedEventArgs) {
-    console.log("Favorite changed", eventArguments.newValue);
+    console.log("Favorite changed", eventArguments);
   }
 
 }
