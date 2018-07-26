@@ -1,0 +1,6 @@
+# Data types
+
+null, undefined, boolean, string, symbol, number, object
+
+To define a variable, use `var` keyword.
+eg. var xyz;
