@@ -8,3 +8,10 @@ eg. var xyz;
 If we don't declare a variable value, it has `undefined` value by default. If we do mathematical operations on it, it will result into `NaN`;
 
 
+# string
+Similar to Python
+var helloWorld = 'Hello "world"';
+var helloWorld = "Hello 'world'";
+
+Both are same
+
