@@ -4,3 +4,7 @@ null, undefined, boolean, string, symbol, number, object
 
 To define a variable, use `var` keyword.
 eg. var xyz;
+
+If we don't declare a variable value, it has `undefined` value by default. If we do mathematical operations on it, it will result into `NaN`;
+
+
