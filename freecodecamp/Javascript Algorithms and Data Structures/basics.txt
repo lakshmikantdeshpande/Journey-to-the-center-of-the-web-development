@@ -9,9 +9,17 @@ If we don't declare a variable value, it has `undefined` value by default. If we
 
 
 # string
-Similar to Python
+Similar to Python both of the following syntaxes are same
 var helloWorld = 'Hello "world"';
 var helloWorld = "Hello 'world'";
 
-Both are same
+# string properties
+var len = "Hello World".length;   // 11
+
+
+
+
+
+
+
 
