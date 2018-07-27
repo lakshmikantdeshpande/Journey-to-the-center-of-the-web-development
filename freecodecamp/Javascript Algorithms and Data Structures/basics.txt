@@ -15,7 +15,7 @@ var helloWorld = "Hello 'world'";
 
 # string properties
 var len = "Hello World".length;   // 11
-
+var firstLetter = "Hello World"[0];  // H
 
 
 
