@@ -17,9 +17,9 @@ var helloWorld = "Hello 'world'";
 var len = "Hello World".length;   // 11
 var firstLetter = "Hello World"[0];  // H
 
-
-
-
-
+Strings are immutable in JavaScript just like Java.
+so, following thing is not possible:
+var xyz = "abc;
+xyz[0] = "1";  // IS NOT POSSIBLE
 
 
