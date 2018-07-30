@@ -46,3 +46,7 @@ Arrays can be printed with alert();
 Arrays can have different datatype data;
 eg. var array = ["abc", 123];
 
+Arrays can have nested arrays
+eg. var array = [[1, 2, "abc"], [5]];
+
+
