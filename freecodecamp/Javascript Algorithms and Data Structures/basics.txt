@@ -8,10 +8,13 @@ eg. var xyz;
 If we don't declare a variable value, it has `undefined` value by default. If we do mathematical operations on it, it will result into `NaN`;
 
 
+
 # string
 Similar to Python both of the following syntaxes are same
 var helloWorld = 'Hello "world"';
 var helloWorld = "Hello 'world'";
+
+
 
 # string properties
 var len = "Hello World".length;   // 11
@@ -23,7 +26,8 @@ var xyz = "abc;
 xyz[0] = "1";  // IS NOT POSSIBLE
 
 
-#functions
+
+# functions
 
 function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
   var result = "A " + myAdjective + " " + myNoun + " " + myVerb + " very " + myAdverb;
@@ -33,3 +37,12 @@ function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
 
 // Change the words here to test your function
 wordBlanks("dog", "big", "ran", "quickly");
+
+
+
+# Arrays
+var sandwich = ["bread", "cabbage", "tomato", "onion", "sauce", "bread"];
+Arrays can be printed with alert();
+Arrays can have different datatype data;
+eg. var array = ["abc", 123];
+
