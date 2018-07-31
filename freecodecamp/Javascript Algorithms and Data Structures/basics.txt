@@ -49,4 +49,20 @@ eg. var array = ["abc", 123];
 Arrays can have nested arrays
 eg. var array = [[1, 2, "abc"], [5]];
 
+Array access is possible with spaces, but not recommended.
+eg. array[0] AND array [0] is possible
+
+
+Multidimensional / nested arrays can be accessed easily.
+var array = [
+  [1,2,3],
+  [4,5,6],
+  [7,8,9],
+  [[10,11,12], 13, 14]
+];
+
+alert(array[3][0][2]);  // 12
+
+
+
 
