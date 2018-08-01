@@ -64,5 +64,7 @@ var array = [
 alert(array[3][0][2]);  // 12
 
 
+Arrays is a stack by default in JavaScript;
+So push() & pop() methods are already present to append and remove the data at the end of the array.
 
 
