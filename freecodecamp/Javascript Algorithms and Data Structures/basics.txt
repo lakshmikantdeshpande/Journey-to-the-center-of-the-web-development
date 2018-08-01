@@ -69,3 +69,9 @@ So push() & pop() methods are already present to append and remove the data at t
 
 * Array Shift Operation
 It's similar to pop(), however it works from start to end of the array.
+
+
+push() /* end of array */ =  unshift() /* start of array */
+pop()  /* end of array */ =  shift()   /* start of array */
+
+
