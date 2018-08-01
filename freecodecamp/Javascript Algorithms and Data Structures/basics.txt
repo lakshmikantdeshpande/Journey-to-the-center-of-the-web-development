@@ -26,20 +26,6 @@ var xyz = "abc;
 xyz[0] = "1";  // IS NOT POSSIBLE
 
 
-
-# functions
-
-function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
-  var result = "A " + myAdjective + " " + myNoun + " " + myVerb + " very " + myAdverb;
-
-  return result;
-}
-
-// Change the words here to test your function
-wordBlanks("dog", "big", "ran", "quickly");
-
-
-
 # Arrays
 var sandwich = ["bread", "cabbage", "tomato", "onion", "sauce", "bread"];
 Arrays can be printed with alert();
@@ -73,5 +59,6 @@ It's similar to pop(), however it works from start to end of the array.
 
 push() /* end of array */ =  unshift() /* start of array */
 pop()  /* end of array */ =  shift()   /* start of array */
+
 
 
