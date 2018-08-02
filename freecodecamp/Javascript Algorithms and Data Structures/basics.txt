@@ -61,4 +61,14 @@ push() /* end of array */ =  unshift() /* start of array */
 pop()  /* end of array */ =  shift()   /* start of array */
 
 
+# Functions
+// function example
+function myFunction() {
+	console.log("My function");
+}
+
+// simple function call
+myFunction();
+
+
 
