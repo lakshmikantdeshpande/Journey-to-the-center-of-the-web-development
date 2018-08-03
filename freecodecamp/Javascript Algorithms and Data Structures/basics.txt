@@ -71,4 +71,27 @@ function myFunction() {
 myFunction();
 
 
+* function with arguments
+function func(one, two) {
+	console.log(one + two);
+}
+func(1, 2);
 
+
+******************************************************************
+# Varible scope
+Variables declared without scope are global.
+Not a good practice. Always declare with var keyword.
+eg. 
+function c() {
+	a = 4;
+}
+
+function d() {
+	alert(a);
+}
+
+c();
+d();
+
+This will create an alert with 4 value.
