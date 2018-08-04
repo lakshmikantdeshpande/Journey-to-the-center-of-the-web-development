@@ -95,3 +95,12 @@ c();
 d();
 
 This will create an alert with 4 value.
+
+
+// Local scope
+function myTest() {
+  var loc = "foo";
+  console.log(loc);
+}
+myTest(); // logs "foo"
+console.log(loc); // loc is not defined
