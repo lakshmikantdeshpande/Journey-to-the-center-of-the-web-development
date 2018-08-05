@@ -104,3 +104,11 @@ function myTest() {
 }
 myTest(); // logs "foo"
 console.log(loc); // loc is not defined
+
+
+
+
+# Queue Representation in JavaScript
+Queue can be simply represented in an array.
+Use push and shift functions to simulate a queue;
+
