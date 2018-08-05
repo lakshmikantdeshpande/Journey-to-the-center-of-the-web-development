@@ -107,8 +107,24 @@ console.log(loc); // loc is not defined
 
 
 
-
 # Queue Representation in JavaScript
 Queue can be simply represented in an array.
 Use push and shift functions to simulate a queue;
+
+
+
+# Equality
+
+== doesn't check dataTypes (Not strict)
+=== checks dataTypes (Strict)
+
+
+
+3 == 3    // true
+3 == '3'  // true
+
+3 === 3    // true
+3 === '3'  // false
+
+
 
