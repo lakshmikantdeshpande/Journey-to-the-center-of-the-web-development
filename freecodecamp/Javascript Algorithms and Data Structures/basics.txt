@@ -127,4 +127,8 @@ Use push and shift functions to simulate a queue;
 3 === '3'  // false
 
 
+# typeof
+typeof operator returns type of the variable.
+eg. alert(typeof '3');
+
 
