@@ -135,7 +135,7 @@ typeof operator returns type of the variable.
 eg. alert(typeof '3');
 
 
-# > and < 
+# > and < and <= and >=
 These operators DO CONVERT DATATYPES (cast) while comparing.
 i.e. '3' < 5 is a valid comparison
 
