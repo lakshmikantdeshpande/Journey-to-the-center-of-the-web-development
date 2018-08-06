@@ -118,6 +118,9 @@ Use push and shift functions to simulate a queue;
 == doesn't check dataTypes (Not strict)
 === checks dataTypes (Strict)
 
+!=  inequality (Will cast)
+!== strict inequality (Won't cast)
+
 
 
 3 == 3    // true
@@ -130,5 +133,10 @@ Use push and shift functions to simulate a queue;
 # typeof
 typeof operator returns type of the variable.
 eg. alert(typeof '3');
+
+
+# > and < 
+These operators DO CONVERT DATATYPES (cast) while comparing.
+i.e. '3' < 5 is a valid comparison
 
 
