@@ -141,11 +141,17 @@ i.e. '3' < 5 is a valid comparison
 
 
 # Switch case
-Strict equality check is done (i.e. === for comparison)
+
 switch(variable) {
 	case x:
 		doSomething();
 		break;
+	default:
+		doDefaultThing();
+		break;
 }
 
+* Switch case behaves slightly differently in Javascript. 
+* Strict equality check is done (i.e. === for comparison) in switch case. 
+* Multiple datatypes can be used in switch case.
 
