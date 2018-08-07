@@ -140,3 +140,12 @@ These operators DO CONVERT DATATYPES (cast) while comparing.
 i.e. '3' < 5 is a valid comparison
 
 
+# Switch case
+Strict equality check is done (i.e. === for comparison)
+switch(variable) {
+	case x:
+		doSomething();
+		break;
+}
+
+
