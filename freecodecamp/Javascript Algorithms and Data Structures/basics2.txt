@@ -5,3 +5,16 @@
 x = count > 0 ? true : false;
 
 
+# object in JavaScript
+
+var cat = {
+	"name": "Whiskers",
+	"legs": 4,
+	"tails": 2,
+	"pets": ["cat", "dog"],
+	5: "five",
+	something: "nothing"
+};
+
+
+
