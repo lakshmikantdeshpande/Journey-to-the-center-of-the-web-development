@@ -1,0 +1,7 @@
+# Ternary operator
+
+// similar to java ternary operator
+
+x = count > 0 ? true : false;
+
+
