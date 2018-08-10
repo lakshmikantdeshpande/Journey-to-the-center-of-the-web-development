@@ -16,5 +16,8 @@ var cat = {
 	something: "nothing"
 };
 
+* use . notation to access values from an object
+eg. alert(cat.name);
+
 
 
