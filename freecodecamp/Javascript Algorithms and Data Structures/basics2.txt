@@ -16,8 +16,11 @@ var cat = {
 	something: "nothing"
 };
 
-* use . notation to access values from an object
+* we can use . notation to access values from an object
 eg. alert(cat.name);
 
+* we can use [] notation to access values from an object
+eg. alert(cat[name]);
+If the property has spaces, using quotes while accessing the property are mandatory
 
 
