@@ -16,11 +16,13 @@ var cat = {
 	something: "nothing"
 };
 
-* we can use . notation to access values from an object
+* Access object using .
 eg. alert(cat.name);
 
-* we can use [] notation to access values from an object
-eg. alert(cat[name]);
-If the property has spaces, using quotes while accessing the property are mandatory
+* Access object using []
+eg. alert(cat["name"]);
 
+* Updating object using . or []
+cat.name = 'Loo';
+cat["legs"] = 2;
 
