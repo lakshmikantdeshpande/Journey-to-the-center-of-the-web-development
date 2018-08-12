@@ -16,13 +16,16 @@ var cat = {
 	something: "nothing"
 };
 
-* Access object using .
-eg. alert(cat.name);
-
-* Access object using []
-eg. alert(cat["name"]);
+* Access object using . or []
+alert(cat.name);
+alert(cat["name"]);
 
 * Updating object using . or []
 cat.name = 'Loo';
 cat["legs"] = 2;
+
+* Adding new properties to object using . or []
+cat.nickname = "loo";
+cat["susu"] = "peepee";
+
 
