@@ -16,11 +16,11 @@ var cat = {
 	something: "nothing"
 };
 
-* Access object using . or []
+* Access an object's properties using . or []
 alert(cat.name);
 alert(cat["name"]);
 
-* Updating object using . or []
+* Updating an object's properties using . or []
 cat.name = 'Loo';
 cat["legs"] = 2;
 
@@ -28,4 +28,7 @@ cat["legs"] = 2;
 cat.nickname = "loo";
 cat["susu"] = "peepee";
 
+* Deleting an object's properties
+delete.cat.nickname;
+delete cat["susu"];
 
