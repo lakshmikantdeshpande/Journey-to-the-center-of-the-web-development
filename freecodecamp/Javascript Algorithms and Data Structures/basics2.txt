@@ -35,3 +35,20 @@ delete cat["susu"];
 * Checking for existence of a property
 alert(cat.hasOwnProperty("nickname"));
 
+* Accessing nested object
+eg. 
+var myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+var gloveBoxContents = myStorage.car.inside["glove box"];
+
+
