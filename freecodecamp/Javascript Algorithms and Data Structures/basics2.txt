@@ -29,6 +29,9 @@ cat.nickname = "loo";
 cat["susu"] = "peepee";
 
 * Deleting an object's properties
-delete.cat.nickname;
+delete cat.nickname;
 delete cat["susu"];
+
+* Checking for existence of a property
+alert(cat.hasOwnProperty("nickname"));
 
