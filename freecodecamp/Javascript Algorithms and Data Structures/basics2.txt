@@ -94,4 +94,8 @@ parseInt("2.5")    // NaN if number can't be parsed
 parseInt("111", 2)   // second parameter is for providing base of 111 // output will be 7
 
  
+# Ternary operator 
+a > b ? true : false
+
+
 
