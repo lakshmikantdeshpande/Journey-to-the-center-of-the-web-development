@@ -82,3 +82,13 @@ do {
 // similar to java
 
 
+
+
+
+# Math library functions
+
+Math.random()
+Math.floor()
+Math.ceil()
+parseInt()    // NaN if number can't be parsed
+
