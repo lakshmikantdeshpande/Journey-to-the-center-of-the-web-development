@@ -88,7 +88,10 @@ do {
 # Math library functions
 
 Math.random()
-Math.floor()
-Math.ceil()
-parseInt()    // NaN if number can't be parsed
+Math.floor(2.4)
+Math.ceil(2.6)
+parseInt("2.5")    // NaN if number can't be parsed
+parseInt("111", 2)   // second parameter is for providing base of 111 // output will be 7
+
+ 
 
