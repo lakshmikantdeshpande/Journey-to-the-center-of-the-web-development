@@ -56,9 +56,21 @@ var gloveBoxContents = myStorage.car.inside["glove box"];
 
 
 # while loop
+
 similar to java;
 var i = 0;
 while (i < 5) {
 	console.log(i);
 	i++;
 }
+// while (i++ < 5)  didn't work in Javascript
+
+
+# for loop
+
+for (var i = 0; i < 5; i++) {
+    ourArray[i] = i;
+}
+// similar to java
+
+
