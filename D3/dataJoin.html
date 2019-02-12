@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+        <style>
+        	.big {
+        		font-size: 72px;
+        	}
+        </style>
+	</head>
+	
+	<body>
+
+		<ul id="list">
+			<li></li>
+			<li></li>
+		</ul>
+
+		<button onclick="javascript:remove()">Remove 50</button>
+
+		<script>
+			/*
+				 data() assigns data to selected elements
+				 Mapping of data:
+				 	li - 10
+				 	li - 20
+				 	   - 30
+				 	   - 40
+				 	   - 50
+
+				 enter() method provides access to unmapped data (i.e. 30, 40, 50)
+			 */
+
+			d3.select("#list").selectAll("li").data([10,20,30,40,50])
+							  .text(function(d) { return d; })
+							  .enter()
+							  .append("li") // Dynamically added new li
+							  .text(function(d) { return d + " << Dynamically added element"; });
+
+            function remove() {
+            	// 50 is excluded intentionally, as exit() will give access to unmapped elements (50) for manipulation (removal in our case)
+            	d3.selectAll("li").data([10, 20, 30, 40])
+            					  .exit()
+            					  .remove();
+            }
+		</script>
+	</body>
+</html>
+
