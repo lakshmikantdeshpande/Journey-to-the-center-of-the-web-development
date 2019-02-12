@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+        <style>
+        	.big {
+        		font-size: 72px;
+        	}
+        </style>
+	</head>
+	
+	<body>
+
+		<ul>
+			<li></li>
+		</ul>
+
+		<br/><br/><br/><br/><br/>
+		<input id="input" type="text" placeholder="Enter comma separated data. eg. 1,2,3,4"></input>
+		<button onclick="javascript:populateData()">Populate</button>
+
+		<script>
+			var data = [];
+			function populateData() {
+				data = [];
+				var inputData = document.getElementById("input").value;
+				let dat = inputData.split(',');
+				for (d of dat) {
+					d = d.trim();
+					if (d != "") {
+						data.push(d);
+					}
+				}
+				this.updateUI();
+			}
+
+			function updateUI() {
+				d3.select("ul").selectAll("li")
+							   .data(data)
+							   .text(function getText(t) {return t;})
+							   .enter()
+							   .append("li")
+							   .text(function getText(t) {return t;});
+			}
+		</script>
+	</body>
+</html>
+
