@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+        <style>
+        	.big {
+        		font-size: 72px;
+        	}
+        </style>
+	</head>
+	
+	<body>
+		<div class="democlass"> Hello </div>
+		<br/>
+		<div class="democlass"> Bye </div>
+		<script>
+			var selectedDivs = d3.selectAll(".democlass");
+			alert(selectedDivs.size());
+		</script>
+	</body>
+</html>
+
