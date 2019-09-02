@@ -1,5 +1,3 @@
-# Journey-to-the-center-of-the-web-development
-
 ## FreeCodeCamp Certifications:  
 ### 1. Responsive Web Design:
 #### Projects:
